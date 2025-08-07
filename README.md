@@ -3,32 +3,21 @@
  ⚙️ Setup Instructions
 ✅ Prerequisites
 Java 17+
-
 Maven
-
 MySQL 8+
-
 IntelliJ IDEA / VS Code / any IDE
 
 🔧 Step-by-Step Setup
 Clone the Repository
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/crime-reporting-system.git
+git clone https://github.com/Manjushree296/crime-reporting-system.git
 cd crime-reporting-system
 Create MySQL Database
 
 sql
-Copy
-Edit
 CREATE DATABASE crime_reporting_db;
 Configure Database in application.properties
 
 properties
-Copy
-Edit
 spring.datasource.url=jdbc:mysql://localhost:3306/crime_reporting_db
 spring.datasource.username=root
 spring.datasource.password=your_mysql_password
@@ -37,15 +26,9 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 Build the Project
 
-bash
-Copy
-Edit
 mvn clean install
 Run the App
 
-bash
-Copy
-Edit
 mvn spring-boot:run
 The backend will be live at: http://localhost:8080
 
@@ -54,9 +37,6 @@ Login/Signup returns a JWT Token.
 
 All protected routes require:
 
-makefile
-Copy
-Edit
 Authorization: Bearer <your_token>
 🧪 API Endpoints
 👤 Auth Routes
@@ -74,4 +54,5 @@ Method	Endpoint	Description
 GET	/api/reports	View all reports
 POST	/api/reports/{id}/accept	Accept a report
 POST	/api/reports/{id}/reject	Reject with reason
+
 
