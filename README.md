@@ -1,6 +1,5 @@
 ﻿# crime-reporting-system
-
- ⚙️ Setup Instructions
+⚙️ Setup Instructions
 ✅ Prerequisites
 Java 17+
 Maven
@@ -54,5 +53,6 @@ Method	Endpoint	Description
 GET	/api/reports	View all reports
 POST	/api/reports/{id}/accept	Accept a report
 POST	/api/reports/{id}/reject	Reject with reason
+
 
 
