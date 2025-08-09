@@ -1,7 +1,7 @@
 ﻿# crime-reporting-system
 ⚙️ Setup Instructions
 ✅ Prerequisites
-Java 17+
+Java 17+  
 Maven
 MySQL 8+
 IntelliJ IDEA / VS Code / any IDE
@@ -53,6 +53,7 @@ Method	Endpoint	Description
 GET	/api/reports	View all reports
 POST	/api/reports/{id}/accept	Accept a report
 POST	/api/reports/{id}/reject	Reject with reason
+
 
 
 
